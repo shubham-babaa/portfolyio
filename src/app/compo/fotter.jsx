@@ -10,7 +10,7 @@ export default function Footer() {
                 I am a web developer and front-end enthusiast. <br />
             </div>
             <div className='sm:grid-cols-2 mt-10 flex justify-between sm:px-[20%] px-5'>
-                <div className='text-center sm:text-left mb-8 sm:mb-0 '>
+                {/* <div className='text-center sm:text-left mb-8 sm:mb-0 '>
                     <h1 className='text-3xl text-pink-400 mb-5' id="contact">Contact</h1>
                     <div className='flex gap-5'>
                     <Link href="mailto:manshipatel.deep@example.com ">
@@ -58,7 +58,7 @@ export default function Footer() {
             <Image src="/leetcode.svg" alt="" height={600} width={400} className='w-[150px] mx-auto  mt-3 ' />
           </Link>
           </div>
-                </div>
+                </div> */}
             </div>
             <div className='text-xl font-extralight text-center text-blue-300 mt-8 sm:mt-16'>I am Shubham Patel, a web developer and front-end enthusiast. Let's connect and build something amazing together.
             <br />
