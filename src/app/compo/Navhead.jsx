@@ -32,7 +32,7 @@ const Navhead = () => {
 
 
     return (
-        <nav class="  overflow-x-hidden w-full z-50 ">
+        <nav class="  overflow-x-hidden w-full z-50  ">
             <div
                     className={` hidden sm:flex  bg-cyan-900  justify-center `
 
@@ -133,7 +133,7 @@ const Navhead = () => {
                 </div>
             </div>
             <div
-                className={`block sm:hidden z-50 bg-slate-600 h-[400px] w-[80%] fixed left-[-100%] top-13 ${toggel?"left-[0%] transition-all  translate-x-[0%] duration-100 ":"left-[-100%] transition-all translate-x-[0%]  duration-100 "}`}
+                className={`block sm:hidden z-50 bg-blue-300  h-[500px] w-[97%] fixed left-[-100%] top-13 ${toggel?"left-[0%] transition-all shadow-2xl shadow-red-400 translate-x-[0%] duration-100 ":"left-[-100%] transition-all translate-x-[0%]  duration-100 "}`}
             >
 
 
