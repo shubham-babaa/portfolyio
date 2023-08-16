@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='text-xl font-extralight text-center text-blue-300 mt-8 sm:mt-16'>
-        I am Shubham Patel, a web developer and front-end enthusiast. Let's
+        I am Shubham Patel a web developer and front-end enthusiast. Lets
         connect and build something amazing together.
         <br />
       </div>
