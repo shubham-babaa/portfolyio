@@ -1,7 +1,7 @@
 'use client '
 import React from 'react';
 
-const pdf_file_url='http://localhost:3000/resume.pdf';
+const pdf_file_url='http://localhost:3000/RESUME.html';
 export default function Resume() {
 
   const download=(url)=>{
@@ -13,7 +13,7 @@ atag.click();
 atag.remove();
   }
   return (
-    <section className="bg-gradient-to-b from-gray-800 to-gray-900  py-12" id="resume">
+    <section className="  py-12" id="resume">
       <div className='flex items-center justify-center'>
       <h2 className="text-3xl font-bold mb-10 text-pink-800 text-center">Resume<br></br>
         <hr className='w-[30vw] ' /></h2>
@@ -41,7 +41,7 @@ atag.remove();
             </div>
           </div>
           <div className="w-full sm:w-1/2 text-center">
-            <button onClick={()=>{download(pdf_file_url)}}  className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8">Download Resume</button>
+            <button onClick={()=>{download("/RESUME.html")}}  className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8">Download Resume</button>
           </div>
         </div>
       </div>

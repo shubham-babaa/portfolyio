@@ -5,7 +5,7 @@ import { FiMail, FiPhone, FiTwitter, FiInstagram, FiLinkedin, FiGithub } from 'r
 
 export default function Footer() {
   return (
-    <div className='bg-gray-800 gap-11 pb-5 px-auto'>
+    <div className='gap-11 pb-5 px-auto shadow-2xl shadow-gray-100'>
       <div className='text-xl font-extralight text-blue-300 flex items-center text-center justify-center'>
         I am a web developer and front-end enthusiast. <br />
       </div>
@@ -16,10 +16,10 @@ export default function Footer() {
           </h1>
           <div className='flex gap-5'>
             <a href='mailto:manshipatel.deep@example.com'>
-              <FiMail className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
+              <FiMail className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
             </a>
             <a href='tel:+6265305788'>
-              <FiPhone className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
+              <FiPhone className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
             </a>
           </div>
         </div>
@@ -27,16 +27,16 @@ export default function Footer() {
           <h1 className='text-3xl text-pink-400 mb-3 '>Find Me </h1>
           <div className='flex justify-center gap-5 items-center flex-wrap'>
             <a href='#'>
-              <FiTwitter className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
+              <FiTwitter className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
             </a>
             <a href='#' className='text-xl'>
-              <FiInstagram className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
+              <FiInstagram className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
             </a>
             <a href='#'>
-              <FiLinkedin className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
+              <FiLinkedin className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
             </a>
             <a href='https://github.com/'>
-              <FiGithub className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
+              <FiGithub className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11 h-7 w-7 sm:p-2 p-1' />
             </a>
             <a href='https://leetcode.com/problemset/all/'>
               <Image

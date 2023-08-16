@@ -20,10 +20,14 @@ export default function Home() {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     return (
-        <div id="home " className=' overflow-x-hidden'>
+        <div id="home " className=' overflow-x-hidden bg-gray-900'>
          
-            <Navhead />
+         <motion.div className="div"
           
+            animate={{}}
+            >
+                <Navhead/>
+            </motion.div>
            
           
             <motion.div
@@ -52,10 +56,10 @@ export default function Home() {
             </motion.div>
             <motion.div className="div"
             ref={ref_1}
-              initial={{ y: 10, opacity: 0 }}
-              animate={{ y:isInView_1? 0:10, opacity: isInView_1? 1:0 }}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y:isInView_1? 0:20, opacity: isInView_1? 1:0 }}
               exit={{ y: -100, opacity: 0 }}
-              transition={{ duration: 1}}
+              transition={{ duration: 2}}
             >
                 <Project/>
             </motion.div>
