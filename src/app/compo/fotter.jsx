@@ -1,16 +1,7 @@
 'use client'
-import React, { useEffect } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import Image from 'next/image';
-
-import {
-  FiMail,
-  FiPhone,
-  FiTwitter,
-  FiInstagram,
-  FiLinkedin,
-  FiGithub
-} from 'react-icons/fi';
+import { FiMail, FiPhone, FiTwitter, FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
 
 export default function Footer() {
   return (
@@ -35,13 +26,13 @@ export default function Footer() {
         <div className='text-center '>
           <h1 className='text-3xl text-pink-400 mb-3 '>Find Me </h1>
           <div className='flex justify-center gap-5 items-center flex-wrap'>
-            <a href='https://github.com/'>
+            <a href='#'>
               <FiTwitter className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
             </a>
-            <a href='https://github.com/' className='text-xl'>
+            <a href='#' className='text-xl'>
               <FiInstagram className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
             </a>
-            <a href='https://github.com/'>
+            <a href='#'>
               <FiLinkedin className='text-blue-300 bg-gray-500 rounded-full sm:h-16 sm:w-16 h-7 w-7 sm:p-2 p-1' />
             </a>
             <a href='https://github.com/'>
