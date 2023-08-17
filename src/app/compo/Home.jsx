@@ -38,9 +38,9 @@ export default function Home() {
                 exit={{ y: -100, opacity: 0 }}
                 transition={{ duration: 1 }}
                 id="home"
-                className="relative flex min-h-[600px] rounded-2xl lg:mt-5 lg:w-[50%] mx-auto md:justify-center z-0 p-5 mb-10"
+                className="relative flex min-h-[600px] rounded-b-2xl lg:mt-5  mx-auto md:justify-center z-0 p-5 "
                 style={{
-                    backgroundImage: `url('/profile.jpeg')`,
+                    backgroundImage: `url('/kl1.jpg')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -51,7 +51,7 @@ export default function Home() {
             >
              
                 
-                <span className='lg:w-[50%] w-[90%]  mx-auto my-auto md:my-0  shadow-2xl shadow-gray-100 bg-opacity-50 p-10 bg-slate-500 justify-center  text-start h-full rounded-2xl px-10 '>  <TypingAnimation/></span>
+                <span className='lg:w-[30%] w-[90%]  mx-auto my-auto md:my-0  s shadow-gray-100 bg-opacity-50 p-10 bg-slate-500 justify-center  text-start h-full rounded-2xl px-10 '>  <TypingAnimation/></span>
               
             </motion.div>
             <motion.div className="div"
@@ -59,7 +59,7 @@ export default function Home() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y:isInView_1? 0:20, opacity: isInView_1? 1:0 }}
               exit={{ y: -100, opacity: 0 }}
-              transition={{ duration: 2}}
+              transition={{ duration: 1}}
             >
                 <Project/>
             </motion.div>

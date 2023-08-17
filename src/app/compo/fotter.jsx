@@ -26,19 +26,19 @@ export default function Footer() {
         <div className='text-center '>
           <h1 className='text-3xl text-pink-400 mb-3 '>Find Me </h1>
           <div className='flex justify-center gap-5 items-center flex-wrap'>
-            <a href='#'>
-              <FiTwitter className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
+          <a href='https://twitter.com/shubham_babaa'>
+              <FiTwitter className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1 hover:bg-blue-900' />
             </a>
-            <a href='#' className='text-xl'>
-              <FiInstagram className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
+            <a href='https://www.instagram.com/t_only_life/' className='text-xl'>
+              <FiInstagram className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1 hover:bg-red-900' />
             </a>
-            <a href='#'>
-              <FiLinkedin className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1' />
+            <a href='https://www.linkedin.com/in/shubham-patel-4bb923267/'>
+              <FiLinkedin className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1 hover:bg-blue-900' />
             </a>
-            <a href='https://github.com/'>
-              <FiGithub className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11 h-7 w-7 sm:p-2 p-1' />
+            <a href='https://github.com/shubham-babaa'>
+              <FiGithub className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11 h-7 w-7 sm:p-2 p-1 hover:bg-gray-900' />
             </a>
-            <a href='https://leetcode.com/problemset/all/'>
+            <a href='https://leetcode.com/baba123456789/'>
               <Image
                 src='/leetcode.svg'
                 alt=''
@@ -50,11 +50,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='text-xl font-extralight text-center text-blue-300 mt-8 sm:mt-16'>
-        I am Shubham Patel a web developer and front-end enthusiast. Lets
-        connect and build something amazing together.
-        <br />
-      </div>
+      
     </div>
   );
 }

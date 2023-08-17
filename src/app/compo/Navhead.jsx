@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FiMail, FiPhone, FiTwitter, FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
 const Navhead = () => {
     const [toggel, setToggel] = useState(false);
   const [screenWidth, setScreenWidth] = useState(null);
@@ -133,59 +134,77 @@ const Navhead = () => {
                 </div>
             </div>
             <div
-                className={`block sm:hidden z-50 bg-blue-300  h-[500px] w-[100%] fixed left-[-100%] top-13 ${toggel?"left-[0%] transition-all shadow-2xl shadow-red-400 translate-x-[0%] duration-100 ":"left-[-100%] transition-all translate-x-[0%]  duration-100 "}`}
+                className={`block sm:hidden z-50 bg-gray-900 bg-opacity-80 h-auto w-[40%]  fixed left-[-100%] top-[8.1%] ${toggel?"left-[0%] transition-all shadow-xl rounded-b-md translate-x-[0%] duration-100 ":"left-[-100%] transition-all translate-x-[0%]  duration-100 "}`}
             >
 
 
-                <div className="text-start">
+                <div className="text-start hover:bg-gray-700 hover:text-white text-cyan-300">
                 <button onClick={()=>{setToggel(false)}}>
                     <Link
                         href="#home"
-                        className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                        className="block  px-8 py-2 rounded-md"
                     >
                         Home
                     </Link>
                     </button>
                 </div>
-                <div className="text-start">
+                <div className="text-start hover:bg-gray-700 hover:text-white text-cyan-300">
                 <button onClick={()=>{setToggel(false)}}>
                     <Link
                         href="#resume"
-                        className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                        className="block  px-8 py-2 rounded-md"
                     >
                         Resume
                     </Link>
                     </button>
                 </div>
-                <div className="text-start">
+                <div className="text-start hover:bg-gray-700 hover:text-white text-cyan-300 ">
                     <button onClick={()=>{setToggel(false)}}>
                     <Link
                         href="#about"
-                        className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                        className="block  hover:text-white px-8 py-2 rounded-md"
                     >
                         About
                     </Link>
                     </button>
                 </div>
-                <div className="text-start">
+                <div className="text-start hover:bg-gray-700 hover:text-white text-cyan-300">
                 <button onClick={()=>{setToggel(false)}}>
                     <Link
                         href="#contact"
-                        className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                        className="block  px-8 py-2 rounded-md"
                     >
                         Contact
                     </Link>
                     </button>
                 </div>
-                <div className="text-start">
+                <div className="text-start hover:bg-gray-700 hover:text-white text-cyan-300">
                 <button onClick={()=>{setToggel(false)}}>
                     <Link
                         href="#project"
-                        className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                        className="block  px-8 py-2 rounded-md"
                     >
                         Project
                     </Link>
                     </button>
+                </div>
+                <hr className=" h-2"/>
+                <div className="text-start mb-10">
+                <div className='flex justify-center gap-5 items-center flex-wrap'>
+            <a href='https://twitter.com/shubham_babaa'>
+              <FiTwitter className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1 hover:bg-blue-900' />
+            </a>
+            <a href='https://www.instagram.com/t_only_life/' className='text-xl'>
+              <FiInstagram className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1 hover:bg-red-900' />
+            </a>
+            <a href='https://www.linkedin.com/in/shubham-patel-4bb923267/'>
+              <FiLinkedin className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11  h-7 w-7 sm:p-2 p-1 hover:bg-blue-900' />
+            </a>
+            <a href='https://github.com/shubham-babaa'>
+              <FiGithub className='text-blue-300 bg-gray-500 rounded-full sm:h-11 sm:w-11 h-7 w-7 sm:p-2 p-1 hover:bg-gray-900' />
+            </a>
+          
+          </div>
                 </div>
 
             </div>
