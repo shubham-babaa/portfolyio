@@ -10,8 +10,10 @@ export default function Project() {
   return (
     <div className=' pb-10 px-[8%] lg:pl-40'>
       <div className='flex items-center justify-center pt-10' id="project">
-      <h2 className="text-3xl text-center font-bold mb-10 text-pink-800">Project<br></br>
-        <hr className='w-[30vw] ' /></h2>
+      <h2
+  className="text-3xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-gray-900 text-center"
+>Project<br></br>
+       <hr className='w-[30vw] bg-gradient-to-r from-blue-400 to-gray-900 h-[2px] ' /></h2>
       </div>
       <div className=' grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3  '>
      

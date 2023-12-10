@@ -24,7 +24,7 @@ const TypingAnimation = () => {
 
   return (
     <div>
-      <h1 className="text-lg">{displayedText}</h1>
+      <h1 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-gray-100">{displayedText}</h1>
     </div>
   );
 };

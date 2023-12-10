@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "./fotter";
 import { FiMail, FiPhone, FiTwitter, FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
 const Navhead = () => {
     const [toggel, setToggel] = useState(false);
@@ -33,18 +34,20 @@ const Navhead = () => {
 
 
     return (
-        <nav class="  overflow-x-hidden w-full z-50  shadow-md shadow-gray-600  ">
+        <nav class="  overflow-x-hidden w-full z-50  shadow-md shadow-gray-600  border-b-2 border-yellow-600 ">
             <div
-                    className={` hidden sm:flex  bg-blue-500 bg-opacity-30  justify-center  shadow-2xl shadow-gray-100`
+                    className={` hidden sm:flex  bg-white bg-opacity-30  justify-center  shadow-2xl shadow-gray-100 gap-20`
 
                     }
                 >
 
+<div  className={`  sm:flex  bg-white bg-opacity-30    shadow-2xl shadow-gray-100`
 
+}>
                     
                         <Link
                             href="#home"
-                            className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                            className="block text-pink-500 hover:py-1 hover:bg-gray-700  hover:text-white my-2 px-5  rounded-md"
                         >
                             Home
                         </Link>
@@ -52,7 +55,7 @@ const Navhead = () => {
                     
                         <Link
                             href="#resume"
-                            className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                            className="block text-pink-500 hover:bg-gray-700 hover:py-1  hover:text-white my-2 px-5  rounded-md"
                         >
                             Resume
                         </Link>
@@ -60,25 +63,28 @@ const Navhead = () => {
                     
                         <Link
                             href="#about"
-                            className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                            className="block text-pink-500 hover:bg-gray-700 hover:py-1 hover:text-white my-2 px-5  rounded-md"
                         >
                             About
                         </Link>
                
                         <Link
                             href="#contact"
-                            className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                            className="block text-pink-500 hover:bg-gray-700  hover:py-1 hover:text-white my-2 px-5  rounded-md"
                         >
                             Contact
                         </Link>
                         <Link
                             href="#project"
-                            className="block text-pink-500 hover:bg-gray-700 hover:text-white px-8 py-2 rounded-md"
+                            className="block text-pink-500 hover:bg-gray-700  hover:py-1 hover:text-white my-2 px-5  rounded-md"
                         >
                             project
                         </Link>
+                        </div>
+         <div>
                 
-
+          <Footer/>
+          </div>
                 </div>
             <div className=" flex justify-between sm:hidden h-auto bg-cyan-900 w-[100%] px-5 py-2 z-50">
 
@@ -205,6 +211,7 @@ const Navhead = () => {
             </a>
           
           </div>
+
                 </div>
 
             </div>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import TypingAnimation from './tome'
-import BubbleBackground from "./BubbleBackground";
+
 import Fotter from './fotter'
 import Resume from "./resume"
 import Project from "./project"
@@ -20,7 +20,7 @@ export default function Home() {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
     return (
-        <div id="home " className=' overflow-x-hidden bg-gray-900'>
+        <div id="home " className=' overflow-x-hidden bg-white '>
          
          <motion.div className="div"
           
@@ -38,20 +38,20 @@ export default function Home() {
                 exit={{ y: -100, opacity: 0 }}
                 transition={{ duration: 1 }}
                 id="home"
-                className="relative flex min-h-[600px] rounded-b-2xl lg:mt-5  mx-auto md:justify-center z-0 p-5 "
-                style={{
-                    backgroundImage: `url('/kl1.jpg')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
+                className="relative flex min-h-[200px]  lg:mt-5  mx-auto md:justify-center z-0 p-5 bg-gray-900"
+                // style={{
+                //     backgroundImage: `url('/kl1.jpg')`,
+                //     backgroundSize: 'cover',
+                //     backgroundPosition: 'center',
+                //     backgroundRepeat: 'no-repeat',
                    
                 
-                  }}
+                //   }}
           
             >
              
                 
-                <span className='lg:w-[30%] w-[90%]  mx-auto my-auto md:my-0  s shadow-gray-100 bg-opacity-50 p-10 bg-slate-500 justify-center  text-start h-full rounded-2xl px-10 '>  <TypingAnimation/></span>
+                <span className='lg:w-[70%] w-[90%]  mx-auto  md:my-0  s shadow-gray-100  p-10  justify-center   text-start h-full rounded-2xl px-10 '>  <TypingAnimation/></span>
               
             </motion.div>
             <motion.div className="div"
@@ -85,7 +85,7 @@ export default function Home() {
             </motion.div>
           
 
-           <Fotter/>
+         
         </div>
     )
 }
